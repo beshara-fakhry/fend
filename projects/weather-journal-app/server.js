@@ -34,5 +34,5 @@ function addData(request,response){
               date:request.body.date,
               userFeeling:request.body.userFeeling,
               };
- projectData.push(newEntry);
+ projectData=newEntry;
 };
