@@ -17,7 +17,7 @@ function make(e){
  getWeatherData(baseURL,zip,apiKey)
 
  .then(function(data){
-     postData('/add',{temperature:data.temperature,date:data.date,userFeeling:userFeeling});
+     postData('/add',{temperature:data.main.temp,date:newDate,userFeeling:userFeeling});
      updateUI();
  };)
 };
