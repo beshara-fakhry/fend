@@ -11,7 +11,7 @@ const generate=document.getElementById('generate');
 generate.addEventListener('click',make);
 
 function make(e){
- const zip=document.getElementById('zip');
+ const zip=document.getElementById('zip').value;
  const userFeeling=document.getElementById('feelings');
 
  getWeatherData(baseURL,zip,apiKey)
