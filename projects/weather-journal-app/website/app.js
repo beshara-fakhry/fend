@@ -45,7 +45,7 @@ const postData=async (url='',data={})=>{
  catch(error){console.log('error',error);}
 };
 
-const UpdateUI=async ()=>{
+const updateUI=async ()=>{
  const request=await fetch('/all');
  try{
   const allData=await request.json();
