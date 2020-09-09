@@ -12,7 +12,7 @@ generate.addEventListener('click',make);
 
 function make(e){
  const zip=document.getElementById('zip').value;
- const userFeeling=document.getElementById('feelings');
+ const userFeeling=document.getElementById('feelings').value;
 
  getWeatherData(baseURL,zip,apiKey)
 
